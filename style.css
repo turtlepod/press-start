@@ -2,7 +2,7 @@
  * Theme Name:  Press Start
  * Theme URI:   http://shellcreeper.com/press-start-wordpress-theme/
  * Description: Very cool WordPress theme for gamer.
- * Version:     0.1.1
+ * Version:     1.0.0
  * Author:      David Chandra Purnama
  * Author URI:  http://shellcreeper.com
  * Tags:        green, white, two-columns, right-sidebar, left-sidebar, responsive-layout, custom-menu, custom-background, featured-images, editor-style, threaded-comments, translation-ready
@@ -269,8 +269,8 @@ pre{
 /* === #04 - MENUS === */
 
 #menu-primary{
-	border-bottom: 10px solid #2B2B2B;
-	border-bottom: 1rem solid #2B2B2B;
+	border-bottom: 5px solid #2B2B2B;
+	border-bottom: 0.5rem solid #2B2B2B;
 	background: #12B924;
 }
 #menu-toggle-primary{
@@ -454,6 +454,14 @@ pre{
 		margin: 0;
 		border-bottom: 1px solid #2b2b2b; /* fixed */
 		font-weight: 800;
+	}
+	.sticky .entry-title a:before{
+		content: "\f109";
+		font-family: "dashicons";
+		vertical-align: top;
+		-webkit-font-smoothing: antialiased;
+		margin-right: 10px;
+		margin-right: 1rem;
 	}
 
 	/**

@@ -14,6 +14,11 @@ This theme is licensed under the [GNU General Public License](http://www.gnu.org
 
 ## Changelog:
 
+### 1.0.0
+* Update HC 2.0.2 and tamatebako 1.2.2
+* Smaller border bottom for navigation.
+* Add sticky post icon.
+
 ### 0.1.1 (15 August 2014)
 * Add README.md
 * Update Hybrid Core Library to version 2.0.1

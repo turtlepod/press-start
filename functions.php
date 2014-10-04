@@ -20,9 +20,9 @@ function press_start_setup(){
 
 	/* === DEBUG === */
 	$debug_args = array(
-		'mobile'         => 0,
+		'mobile'         => 1,
 		'no-js'          => 0,
-		'media-queries'  => 1,
+		'media-queries'  => 0,
 	);
 	//add_theme_support( 'tamatebako-debug', $debug_args );
 
