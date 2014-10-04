@@ -90,16 +90,6 @@ module.exports = function(grunt) {
 				src: 'media-queries.css',
 				dest: 'media-queries.min.css'
 			},
-			theme: {
-				files: {
-					'css/theme.min.css': ['css/reset.css', 'css/menus.css', 'style.css', 'media-queries.css' ]
-				}
-			},
-			editor: {
-				files: {
-					'css/editor-style.min.css': ['css/reset.css', 'style.css' ]
-				}
-			}
 		}, // end grunt-contrib-cssmin
 
 
