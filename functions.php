@@ -81,4 +81,4 @@ function press_start_setup(){
 }
 
 
-do_action( 'press_start_after_theme_setup' );
+do_action( 'press_start_after_setup_theme' );

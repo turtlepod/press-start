@@ -6,6 +6,22 @@
 
 Very cool WordPress theme for gamer.
 
+### Theme Layout and Sidebar:
+
+This theme support two column layout using left or right sidebar. You can change layout globally via theme customizer or using meta box to change layout for each post.
+
+### Navigation Menus:
+
+* **Primary Navigation**: located below header. On mobile device will use toggle and using menu name as toggle link.
+
+### Custom Background:
+
+You can change background via theme customizer or from background setting page.
+
+### Custom Header Image:
+
+This theme do not have custom header image option.
+
 ## Copyright & license
 
 This theme is licensed under the [GNU General Public License](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 (GPL) or later.
