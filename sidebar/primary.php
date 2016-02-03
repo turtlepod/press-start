@@ -1,6 +1,6 @@
 <div id="sidebar-primary-wrap">
 
-	<div id="sidebar-primary">
+	<aside id="sidebar-primary">
 
 		<?php if ( is_active_sidebar( 'primary' ) ) : // If the sidebar has widgets. ?>
 

@@ -9,6 +9,7 @@
 			<div class="entry-byline">
 				<span class="entry-author vcard"><?php the_author_posts_link(); ?></span>
 				<?php tamatebako_entry_date(); ?>
+				<?php tamatebako_comments_link(); ?>
 			</div><!-- .entry-byline -->
 
 		</div><!-- .entry-header -->

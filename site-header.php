@@ -2,7 +2,9 @@
 
 	<div class="header-wrap">
 
-		<?php tamatebako_menu_toggle( 'primary' ); ?>
+		<div class="menu-toggle" id="menu-toggle-primary">
+			<a href="#menu-toggle-primary" class="menu-toggle-button button"><span class="screen-reader-text"><?php echo tamatebako_get_menu_name( 'primary' ); ?></span></a>
+		</div>
 
 		<div id="branding">
 
