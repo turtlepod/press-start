@@ -10,7 +10,7 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-
 .singular .entry-header:after,
 .singular .entry-content:after,
 .singular .entry-footer:after,
-.loop-nav:after,
+.post-navigation:after,
 .comments-header:after,
 .comment-wrap:after,
 .comment-meta:after,
@@ -23,8 +23,8 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-
 .widget_rss ul li:after,
 #respond .comment-form-comment:before,
 #respond .comment-form-comment:after,
-.loop-pagination:before,
-.loop-pagination:after,
+.navigation.pagination:before,
+.navigation.pagination:after,
 #footer:before,
 #footer:after{
 	content:".";display:block;height:0;clear:both;visibility:hidden;
@@ -395,14 +395,14 @@ pre{
 
 /* === #06 - LOOP META === */
 
-.loop-meta{
+.archive-header{
 	text-align: center;
 }
-.loop-title{
+.archive-title{
 	font-weight: 800;
 	text-transform: uppercase;
 }
-.loop-description{
+.archive-description{
 	display: none;
 }
 
@@ -680,25 +680,25 @@ pre{
 
 /* === #08 - LOOP NAV === */
 
-.loop-nav{
+.post-navigation{
 	background: #fff;
 	padding: 0;
 	border: 5px solid #2b2b2b;
 	margin-bottom: 30px;
 	margin-bottom: 3rem;
 }
-.loop-nav .screen-reader-text{
+.post-navigation .screen-reader-text{
 	position: inherit;
 	left: auto;
 	top: auto;
 }
-.loop-nav .prev,
-.loop-nav .next{
+.post-navigation .nav-prev,
+.post-navigation .nav-next{
 	padding: 10px 30px;
 	padding: 1rem 3rem;
 }
 
-.loop-nav .prev{
+.post-navigation .nav-prev{
 	border-bottom: 1px dashed #2b2b2b;
 }
 
@@ -1031,7 +1031,7 @@ pre{
 
 /* === #10 - LOOP PAGINATION === */
 
-.loop-pagination{
+.navigation.pagination{
 	margin-bottom: 40px;
 	margin-bottom: 4rem;
 	text-align: center;

@@ -3,12 +3,102 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-
 
 /* === EDITOR STYLE === */
 
+/* body */
+body{
+	color: #2b2b2b;
+	background: #fff;
+}
+/* Link */
+a{
+	color: #06400D;
+	border-bottom: 1px dotted #000;
+}
+a:hover,
+a:focus{
+	color: #12B924;
+	border-bottom: 1px dotted #12B924;
+}
+/* FORM */
+fieldset,
+legend{
+	border: 1px dashed #2b2b2b;
+}
+button, input, select, textarea{
+	border: 1px solid #2b2b2b;
+	background: #FFF4CE;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+input:focus, input:active,
+textarea:focus, textarea:active,
+select:focus, select:active{
+	border: 1px solid #2b2b2b;
+	background: #fff;
+}
+input[type="text"]:focus, input[type="text"]:active,
+input[type="email"]:focus, input[type="email"]:active,
+input[type="url"]:focus, input[type="url"]:active,
+textarea:focus, textarea:active{
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+}
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button,
+.button{
+	display: inline-block;
+	position: relative;
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: 800;
+	padding: 8px 30px 12px 30px;
+	padding: 0.8rem 3rem 1.2rem 3rem;
+	margin: 0 5px 10px 0;
+	margin: 0 0.5rem 1rem 0;
+	color: #fff;
+	background: #12B924;
+	border: 1px solid #06400D;
+	box-shadow: 0 5px 0 #06400D;
+	box-shadow: 0 0.5rem 0 #06400D;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow:
+		-1px -1px 0 #06400D,
+		1px -1px 0 #06400D,
+		-1px 1px 0 #06400D,
+		1px 1px 0 #06400D;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+button:hover,
+.button:hover{
+	border: 1px solid #06400D;
+	background: #0BA81B;
+	color: #fff;
 
-
-
-
-
-
-
-
+}
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+button:focus,
+.button:focus{
+	border: 1px solid #06400D;
+	box-shadow: none;
+	top: 5px;
+	top: 0.5rem;
+	color: #fff;
+}
+/* Pre, Code */
+pre{
+	border: 5px solid #2b2b2b;
+	border: 0.5rem solid #2b2b2b;
+	background-color: rgba( 18, 185, 36, 0.1);
+}
 
