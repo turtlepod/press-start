@@ -6,7 +6,7 @@
 
 	<?php get_template_part( 'site-header' ); ?>
 
-	<?php hybrid_get_menu( 'primary' ); ?>
+	<?php get_template_part( 'menu/primary' ); ?>
 
 	<div id="main">
 
@@ -14,9 +14,7 @@
 
 			<div class="main-wrap">
 
-				<?php //hybrid_get_sidebar( 'primary' ); ?>
-
-				<main <?php hybrid_attr( 'content' ); ?>>
+				<main class="content" id="content">
 
 					<?php if ( have_posts() ){ /* Posts Found */ ?>
 
@@ -46,7 +44,7 @@
 
 				</main><!-- #content -->
 
-				<?php hybrid_get_sidebar( 'primary' ); ?>
+				<?php tamatebako_get_sidebar( 'primary' ); ?>
 
 			</div><!-- .main-wrap -->
 

@@ -1,84 +1,61 @@
 <?php
 /**
- * Genbu Theme Functions
+ * Theme Functions
 ** ---------------------------- */
 
-/* Load text string used in theme */
-require_once( trailingslashit( get_template_directory() ) . 'includes/string.php' );
+/* Load Library. */
+require_once( trailingslashit( get_template_directory() ) . 'library/tamatebako.php' );
 
-/* Load base theme functionality. */
-require_once( trailingslashit( get_template_directory() ) . 'includes/tamatebako.php' );
+/* Load External Library. */
+if( ! function_exists( 'get_the_image' ) ){
+	tamatebako_include( 'includes/get-the-image' );
+}
 
 /* Load theme general setup */
-add_action( 'after_setup_theme', 'press_start_setup' );
+add_action( 'after_setup_theme', 'press_start_setup', 5 );
 
 /**
- * General Setup
- * @since 0.1.0
+ * Setup
  */
 function press_start_setup(){
 
-	/* === DEBUG === */
-	$debug_args = array(
-		'mobile'         => 1,
-		'no-js'          => 0,
-		'media-queries'  => 0,
+	/* === MINIMUM SYSTEM REQ === */
+	$back_compat_args = array(
+		'theme_name'   => 'Press Start',
+		'wp_requires'  => '4.1.0',
+		'php_requires' => '5.2.4',
 	);
-	//add_theme_support( 'tamatebako-debug', $debug_args );
+	add_theme_support( 'tamatebako-back-compat', $back_compat_args );
+	if( ! tamatebako_minimum_requirement( $back_compat_args ) ) return;
 
-	/* === Theme Layouts === */
-	$layouts = array(
-		/* Two Columns */
-		'content-sidebar1' => 'Content / Sidebar 1',
-		'sidebar1-content' => 'Sidebar 1 / Content',
-	);
-	$layouts_args = array(
-		'default'   => 'content-sidebar1',
-		'customize' => true,
-		'post_meta' => true,
-	);
-	add_theme_support( 'theme-layouts', $layouts, $layouts_args );
+	/* === DEPRECATED FUNCTIONS === */
+	//tamatebako_include( 'includes/deprecated/deprecated-hybrid-core' );
+	//tamatebako_include( 'includes/deprecated/deprecated-tamatebako' );
 
-	/* === Register Sidebars === */
-	$sidebars_args = array(
-		"primary" => array( "name" => press_start_string( 'sidebar-primary-name' ), "description" => "" ),
-	);
-	add_theme_support( 'tamatebako-sidebars', $sidebars_args );
+	/* === TRANSLATION === */
+	tamatebako_include( 'includes/translation' );
 
-	/* === Register Menus === */
-	$menus_args = array(
-		"primary" => press_start_string( 'menu-primary-name' ),
-	);
-	add_theme_support( 'tamatebako-menus', $menus_args );
+	/* === SCRIPTS === */
+	tamatebako_include( 'includes/scripts' );
 
-	/* === Load Stylesheet === */
-	$style_args = array(
-		'theme-open-sans-font',
-		'dashicons',
-		'theme-reset',
-		'parent',
-		'style',
-		'media-queries'
-	);
-	add_theme_support( 'hybrid-core-styles', $style_args );
+	/* === CUSTOM COLORS === */
+	//tamatebako_include( 'includes/custom-colors' );
 
-	/* === Editor Style === */
-	$editor_css = array(
-		'css/reset.min.css',
-		'style.css',
-		tamatebako_google_open_sans_font_url()
-	);
-	add_editor_style( $editor_css );
+	/* === CUSTOM FONTS === */
+	//tamatebako_include( 'includes/custom-fonts' );
 
-	/* === Customizer Mobile View === */
-	add_theme_support( 'tamatebako-customize-mobile-view' );
+	/* === SETUP: Sidebars, Menus, Image Sizes, Content Width === */
+	tamatebako_include( 'includes/setup' );
 
-	/* === Custom Background === */
-	add_theme_support( 'custom-background', array( 'default-color' => 'ffffff' ) );
+	/* === LAYOUTS === */
+	tamatebako_include( 'includes/layouts' );
 
-	/* === Set Content Width === */
-	hybrid_set_content_width( 900 );
+	/* === BACKGROUND === */
+	tamatebako_include( 'includes/background' );
+
+	/* === UTILITY: Mobile View, Custom CSS === */
+	tamatebako_include( 'includes/utility' );
+
 }
 
-
-do_action( 'press_start_after_setup_theme' );
+do_action( 'tamatebako_after_setup' );
