@@ -1292,10 +1292,3 @@ pre{
 		float: none;
 	}
 }
-
-/* === #05 - RESIZE === */
-@media screen and (max-width: 700px) {
-	html{
-		font-size: 55%;
-	}
-}
