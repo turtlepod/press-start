@@ -5,12 +5,29 @@ jQuery( document ).ready( function($) {
 
 	/* === Accessibility === */
 
+	/* == Mobile Browser Detection == */
+
+	/* = Using Mobile = */
+	if( navigator.userAgent.match(/Mobile/i)
+		|| navigator.userAgent.match(/Android/i)
+		|| navigator.userAgent.match(/Silk/i)
+		|| navigator.userAgent.match(/Kindle/i)
+		|| navigator.userAgent.match(/BlackBerry/i)
+		|| navigator.userAgent.match(/Opera Mini/i)
+		|| navigator.userAgent.match(/Opera Mobi/i) ){
+		$("body").removeClass("wp-is-not-mobile").addClass("wp-is-mobile");
+	}
+	/* = Using desktop = */
+	else {
+		$( "body" ).removeClass( "wp-is-mobile" ).addClass( "wp-is-not-mobile" );
+	}
+
 	/* == Menu Toggle == */
 	$( '.menu-dropdown' ).find( 'a' ).on( 'focus blur', function() {
 		$( this ).parents().toggleClass( 'focus' );
 	} );
 
-	/* == Focus input element on Hash "#" change == */
+	/* == Focus input element on Hash "#" change, modified from twenty fourteen theme == */
 	var is_webkit = navigator.userAgent.toLowerCase().indexOf( 'webkit' ) > -1,
 	    is_opera  = navigator.userAgent.toLowerCase().indexOf( 'opera' )  > -1,
 	    is_ie     = navigator.userAgent.toLowerCase().indexOf( 'msie' )   > -1;
@@ -18,14 +35,26 @@ jQuery( document ).ready( function($) {
 	if ( ( is_webkit || is_opera || is_ie ) && document.getElementById && window.addEventListener ) {
 		window.addEventListener( 'hashchange', function() {
 			var element = document.getElementById( location.hash.substring( 1 ) );
-
 			if ( element ) {
 				if ( ! /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) )
 					element.tabIndex = -1;
-
 				element.focus();
 			}
 		}, false );
+	}
+
+	/* === Menu Search === */
+
+	/* == Search Toggle == */
+	$( ".search-toggle" ).click( function(e) {
+		e.preventDefault();
+		$( this ).parents( ".menu-search" ).toggleClass( "search-toggle-active" );
+		$( this ).siblings( ".search-field" ).focus();
+	});
+
+	/* == Display search form on search pages == */
+	if ( $("body").hasClass("search") ){
+		$( ".search-toggle" ).parents( ".menu-search" ).addClass( "search-toggle-active" )
 	}
 
 	/* === Menu Toggle === */
@@ -80,6 +109,7 @@ jQuery( document ).ready( function($) {
 		});
 
 	}
+
 	/* Body class status */
 	if ( $("body").hasClass("wp-is-mobile") ){
 		$("body").addClass("mobile-menu-active");
@@ -95,11 +125,11 @@ jQuery( document ).ready( function($) {
 	});
 
 	/* == Mobile menu toggle (small screen) == */
-	$( ".menu-toggle a" ).click( function(e) {
+	$( "#menu-toggle-primary a" ).click( function(e) {
 		e.preventDefault();
 		$( this ).parents(".menu-toggle").toggleClass( "menu-toggle-active" );
 		$( "#menu-primary .menu-dropdown" ).toggleClass( "menu-open" );
+		$( "body" ).toggleClass( "menu-toggle-open" );
 	});
 
 });
-

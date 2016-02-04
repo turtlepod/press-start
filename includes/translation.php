@@ -36,7 +36,7 @@ $texts = array(
 
 	/* functions/setup.php */
 	'untitled'                    => _x( '(Untitled)', 'entry', 'press-start' ),
-	'read_more'                   => _x( 'Read More', 'entry', 'press-start' ),
+	'read_more'                   => _x( 'Start reading', 'entry', 'press-start' ),
 	'search_title_prefix'         => _x( 'Search:', 'archive title', 'press-start' ),
 	'comment_moderation_message'  => _x( 'Your comment is awaiting moderation.', 'comment', 'press-start' ),
 );

@@ -42,6 +42,7 @@ You can change Global Layout in Customize Page. You can change individual post l
 = 2.0.0 - 04.Feb.2016 =
 
 * Remove HC. Use Tamatebako.
+* Fix Navigation Menu CSS.
 
 = 1.0.0 =
 
