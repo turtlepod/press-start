@@ -29,20 +29,14 @@ function press_start_setup(){
 	if( ! tamatebako_minimum_requirement( $back_compat_args ) ) return;
 
 	/* === DEPRECATED FUNCTIONS === */
-	//tamatebako_include( 'includes/deprecated/deprecated-hybrid-core' );
-	//tamatebako_include( 'includes/deprecated/deprecated-tamatebako' );
+	tamatebako_include( 'includes/deprecated/deprecated-hybrid-core' );
+	tamatebako_include( 'includes/deprecated/deprecated-tamatebako' );
 
 	/* === TRANSLATION === */
 	tamatebako_include( 'includes/translation' );
 
 	/* === SCRIPTS === */
 	tamatebako_include( 'includes/scripts' );
-
-	/* === CUSTOM COLORS === */
-	//tamatebako_include( 'includes/custom-colors' );
-
-	/* === CUSTOM FONTS === */
-	//tamatebako_include( 'includes/custom-fonts' );
 
 	/* === SETUP: Sidebars, Menus, Image Sizes, Content Width === */
 	tamatebako_include( 'includes/setup' );
