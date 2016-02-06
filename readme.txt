@@ -39,6 +39,10 @@ You can change Global Layout in Customize Page. You can change individual post l
 
 == Changelog ==
 
+= 2.0.1 - ??.???.2016 =
+
+* Update Tamatebako.
+
 = 2.0.0 - 04.Feb.2016 =
 
 * Remove HC. Use Tamatebako.
