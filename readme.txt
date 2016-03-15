@@ -2,7 +2,7 @@
 Contributors: turtlepod
 Requires at least: 4.1
 Tested up to: 4.4
-Version: 1.0.0
+Version: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: green, white, two-columns, right-sidebar, left-sidebar, responsive-layout, custom-menu, custom-background, featured-images, sticky-post, editor-style, threaded-comments, translation-ready
@@ -11,19 +11,9 @@ Tags: green, white, two-columns, right-sidebar, left-sidebar, responsive-layout,
 
 Very cool WordPress theme for gamer.
 
-* Responsive Layout
-* Custom Background
-* Navigation Menus
-* Widget Areas (Sidebars)
-* Something Cool
-* The GPL v2.0 or later license. :) Use it to make something cool.
-
-Available layouts:
-
-* Content | Sidebar
-* Sidebar | Content
-
 This theme is licensed under the GNU General Public License, version 2 (GPL) or later. All included images are also under GPL2+ licensing.
+
+For more info please visit theme page: [Press Start WordPress Theme](http://genbumedia.com/themes/press-start/).
 
 == Installation ==
 
@@ -31,13 +21,11 @@ This theme is licensed under the GNU General Public License, version 2 (GPL) or 
 2. Click Upload and Choose File, then select the theme's ZIP file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-== Frequently Asked Questions ==
-
-= How to change layout? =
-
-You can change Global Layout in Customize Page. You can change individual post layout using Layouts meta box in post/page edit screen.
-
 == Changelog ==
+
+= 2.1.0 - 15.Mar.2016 =
+
+* Comment moderation message fix (tamatebako update)
 
 = 2.0.1 - ??.???.2016 =
 
