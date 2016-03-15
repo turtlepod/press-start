@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2016-02-04 06:01+0700\n"
+"POT-Creation-Date: 2016-03-15 10:02+0700\n"
 "PO-Revision-Date: 2015-09-05 12:42+0700\n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -26,56 +26,6 @@ msgstr ""
 #: includes/background.php:16
 msgctxt "customizer"
 msgid "Full Size Background"
-msgstr ""
-
-#: includes/custom-colors.php:29
-msgctxt "customizer"
-msgid "Primary Color"
-msgstr ""
-
-#: includes/custom-colors.php:48
-msgctxt "customizer"
-msgid "Hover Color"
-msgstr ""
-
-#: includes/custom-colors.php:67
-msgctxt "customizer"
-msgid "Highlight Color"
-msgstr ""
-
-#: includes/custom-colors.php:87
-msgctxt "customizer"
-msgid "Aqua Mode"
-msgstr ""
-
-#: includes/custom-fonts.php:10
-msgctxt "customizer"
-msgid "Site Title Font"
-msgstr ""
-
-#: includes/custom-fonts.php:16
-msgctxt "customizer"
-msgid "Post Title Font"
-msgstr ""
-
-#: includes/custom-fonts.php:22
-msgctxt "customizer"
-msgid "Widget Title"
-msgstr ""
-
-#: includes/custom-fonts.php:28
-msgctxt "customizer"
-msgid "Base Font"
-msgstr ""
-
-#: includes/custom-fonts.php:45
-msgctxt "Google Font Subset: add new subset( greek, cyrillic, vietnamese )"
-msgid "no-subset"
-msgstr ""
-
-#: includes/custom-fonts.php:51
-msgctxt "customizer"
-msgid "Fonts"
 msgstr ""
 
 #: includes/layouts.php:9 includes/layouts.php:14
@@ -190,7 +140,7 @@ msgstr ""
 
 #: includes/translation.php:39
 msgctxt "entry"
-msgid "Read More"
+msgid "Start reading"
 msgstr ""
 
 #: includes/translation.php:40
