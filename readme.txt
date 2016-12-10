@@ -1,11 +1,11 @@
 === Press Start ===
 Contributors: turtlepod
 Requires at least: 4.1
-Tested up to: 4.4
-Version: 2.1.0
+Tested up to: 4.7
+Version: 2.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: green, white, two-columns, right-sidebar, left-sidebar, responsive-layout, custom-menu, custom-background, featured-images, sticky-post, editor-style, threaded-comments, translation-ready
+Tags: two-columns, right-sidebar, left-sidebar, custom-menu, custom-background, featured-images, sticky-post, editor-style, threaded-comments, translation-ready
 
 == Description ==
 
@@ -22,6 +22,10 @@ For more info please visit theme page: [Press Start WordPress Theme](http://genb
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 2.2.0 - 10.Dec.2016 =
+
+* WP 4.7 Compat
 
 = 2.1.0 - 15.Mar.2016 =
 
